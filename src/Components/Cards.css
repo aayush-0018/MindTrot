@@ -1,0 +1,73 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow */
+  width: 330px; /* Adjusted width */
+  height: 130px; /* Adjusted height */
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Transition for smooth hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.card-content {
+  display: flex;
+  height: 100%; /* Ensure content takes full height of the card */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+}
+
+.capsule {
+  background: linear-gradient(
+    to right,
+    #00c8c8,
+    rgba(0, 200, 200, 0)
+  ); /* New color fading to transparent */
+  color: #006666; /* Darker version of the capsule color */
+  font-weight: bold; /* Make text bold */
+  border-radius: 25px; /* Makes the div capsule-shaped */
+  padding: 5px 15px; /* Padding inside the capsule */
+  font-size: 13.2px; /* Slightly larger text */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card-text {
+  flex: 2; /* Adjust flex values to control space distribution */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+}
+
+.card-text h3 {
+  font-size: 16px; /* Decreased font size for h3 */
+  margin: 0;
+}
+
+.card-text p {
+  font-size: 12px; /* Decreased font size for paragraph */
+  color: grey; /* Light grey color for the text */
+  margin: 0;
+}
+
+.show {
+  color: #00c8c8; /* Darker version of the capsule color */
+  font-weight: bold;
+}
+
+.card-image {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%; /* Increased max-width to make the image larger */
+  height: auto;
+}

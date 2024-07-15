@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+.custom-margin-status {
+  margin-top: 56px; /* Height of the fixed-top navbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-margin-upper {
+  margin-top: 150px; /* Adjust as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.custom-margin-top {
+  margin-top: 70px; /* Adjust as needed */
+}
+
+/* Make Todos component full-width on smaller screens */
+@media (max-width: 576px) {
+  .todos {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Adjust padding and margins for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 0;
   }
 }

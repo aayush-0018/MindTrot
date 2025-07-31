@@ -10,7 +10,7 @@ const Todos = (props) => {
             <div className="date">
               <div className="dates">
                 <div className="day">{props.date}</div>
-                <div className="name" style={{ color: "white" }}>
+                // <div className="name" style={{ color: "white" }}>
                   {props.day}
                 </div>
               </div>
